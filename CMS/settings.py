@@ -121,12 +121,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
-# STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# STATIC_DIR = [
-#     os.path.join(BASE_DIR, 'result_generator/static/result_generator')
-# ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_DIR = [
+    os.path.join(BASE_DIR, 'result_generator/static/result_generator')
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
