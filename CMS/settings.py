@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-o422e^lujb8as_1qk=($8%l*41b=i5=1*!v+d!n)d33!3hi_y#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1','https://tm-sys-dashbobord.herokuapp.com/', config('SERVER', default='127.0.0.1')]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -121,9 +121,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_DIR = [
+STATICFILES_DIR = [
     os.path.join(BASE_DIR, 'result_generator/static/result_generator')
 ]
 
