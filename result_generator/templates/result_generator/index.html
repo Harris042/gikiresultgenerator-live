@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Result Card</title>
+    <link href="{% static 'result_generator/index.css' %}" rel="stylesheet">
+    <script>
+        let courses = {{ course_data|safe }};
+        let grades = {{ grade_data|safe }};
+        let number_of_courses = 0;
+    </script>
+    <script src="{% static 'result_generator/index.js' %}"></script>
+</head>
+<body>
+    <h1 id="heading">Result Card Generator</h1>
+    <div id="course">
+        <datalist id="course_list">
+        </datalist>
+
+        <datalist id='course_grade_list'>
+        </datalist>
+        <div id="form_div">
+            <form action="{% url 'CMS:result' %}" method="POST" id="semester_form">
+                {% csrf_token %}
+                <div id='heading_div'>
+                    <label for="reg_no" id="reg_no_label">Reg No:</label>
+                    <input type="text" id="reg_no" name="reg_no">
+
+                    <label for="name" id="name_label">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Full name">
+
+                    <label for="semester" id="semester_label">Semester:</label>
+                    <input type="text" name="semester" id="semester" placeholder="e.g Fall 2020">
+                </div>
+                <br>
+
+                <div id="course_div">
+                    {# Java Script code #}
+                </div>
+
+                <button id="add_course_button">Add course</button>
+                <br>
+
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+#heading {
+    color: rgb(54, 54, 54);
+    text-shadow: 1px 1px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#form_div {
+    margin-left: 20%;
+    margin-top: 7%;
+}
+
+#heading_div {
+    margin-left: -10px;
+}
+#heading_div > label {
+    font-size: 25px;
+    color: rgb(65, 65, 65);
+    margin-left: 5px;
+}
+
+#heading_div > input {
+    position: relative;
+    bottom: 2px;
+}
+
+#course_div {
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+#course_div > label {
+    font-size: 20px;
+    color: rgb(65, 65, 65);
+}
+
+#course_div > .grade_label {
+    margin-left: 55px;
+}
+
+#course_div > * {
+    margin-bottom: 10px;
+}
+
+#add_course_button, #submit {
+    margin-left: 80px;
+}
+
+#course_div > .courses, .grades {
+    margin-left: 5px;
+}
+#submit {
+    margin-top: 10px;
+}

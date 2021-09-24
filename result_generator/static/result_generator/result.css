@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555;
+  /*background: #f0f0f0 url('../images/bg-body.gif') top left repeat-y;*/
+  font-size: 9pt;
+}
+
+.reportcontenttable {
+  border-color: #d8d8d8;
+}
+
+.Grid {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.GridHeader {
+  font-size: 9pt;
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+  line-height: 1.1em;
+  background: #f3f3f3;
+}
+
+.GridItem {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 10px;
+  line-height: 1.1em;
+}
+
+.GridAlternatingItem {
+  border: 1px solid #ddd;
+  background: #f3f3f3;
+  padding: 10px;
+  line-height: 1.1em;
+}
+
+.GridColumn {
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding: 0px 5px;
+  line-height: 1.1em;
+  vertical-align: middle;
+}
